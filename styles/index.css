@@ -7,32 +7,106 @@
     font-family: 'Inter', sans-serif;
 }
 
+.container {
+    width: 100%;
+    height: 100%;
+}
 
-button {
-    margin: auto;
+header {
+    padding: 30px 20px;
     display: flex;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.btn1 {
-    width: 100%;
-    height: 100%;
-    background-color: #333;
+.menu-icon {
+    font-size: 1.4em;
+    font-weight: 600;
 }
 
-.btn2 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: purple;
-    left: -250px;
-    transition: left .4s;
+main .introduction {
+    display: flex;
+    flex-direction: column;
+    padding:  0 20px;
+    height: calc(100vh - 87px);
 }
 
-button:hover .btn2 {
-    left: 0;
+.introduction h1 {
+    font-size: 3.5em;
+    color: rgb(61, 1, 113);
+    margin-bottom: 20px;
+}
 
+.introduction > p {
+    line-height: 1.5em;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: justify;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.btns .start {
+    background-color: rgb(61, 1, 113);
+    border: none;
+    border-radius: 7px;
+    padding: 20px;
+    color: #fff;
+    width: 50%;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.btns .view {
+    border: none;
+    background-color: #fff;
+    font-size: 1.2em;
+    width: 50%;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+
+    transition: color .2s;
+}
+
+.view:hover {
+    color: rgb(61, 1, 113);
+}
+
+.privacy-msg {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.privacy-msg p {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 5px;
+}
+
+.privacy-msg a {
+    color: rgb(61, 1, 113);
+    margin-left: 26px;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.image {
+    height: 80vh;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: rgb(0, 183, 255);
+}
+
+.image img {
+    max-height: 100%;
 }
