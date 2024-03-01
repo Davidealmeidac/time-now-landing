@@ -110,3 +110,58 @@ main .introduction {
 .image img {
     max-height: 100%;
 }
+
+.marketing {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    width: 100%;
+}
+
+.marketing h2 {
+    font-size: 3em;
+    color: rgb(61, 1, 113);
+    margin-bottom: 20px;
+}
+
+.users {
+    width: 100%;
+}
+
+.users img {
+    width: 60px;
+    margin-top: 20px;
+}
+
+img + img {
+    margin-right: 5px;
+}
+
+.description {
+    width: 100%;
+    background-color: rgba(0, 183, 255, 0.492);
+}
+
+.description-content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+
+.description-content h3 {
+    color: rgb(0, 89, 206);
+    margin-bottom: 10px;
+}
+
+.description-content h2 {
+    font-size: 3em;
+    color: rgb(61, 1, 113);
+    margin-bottom: 20px;
+}
+
+.description-content p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.1em;
+    line-height: 1.5em;
+    font-weight: 500;
+}
