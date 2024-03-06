@@ -194,10 +194,16 @@ img + img {
     margin: 20px 0;
     font-size: 1.2em;
     text-decoration: none;
+
+    transition: all .3s;
 }
 
 .description-content a i {
     font-size: 1.5em;
+}
+
+.description-content a:hover {
+    color: #fff;
 }
 
 footer {
