@@ -287,6 +287,7 @@ footer .logo-container {
     }
 
     .image img {
+        width: 100%;
         margin-top: 70px;
     }
 
@@ -311,14 +312,25 @@ footer .logo-container {
 
     .description {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
     }
-    
-    .description-one {
+
+    .description-content {
         width: 50%;
     }
 
-    .description-two {
-        width: 50%;
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    footer .logo-container {
+        width: 100%;
+    }
+
+    footer .service-list {
+        width: 10%;
     }
 }
