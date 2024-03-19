@@ -24,6 +24,10 @@ header {
     font-weight: 600;
 }
 
+.menu-btn {
+    display: none;
+}
+
 main .introduction {
     display: flex;
     flex-direction: column;
@@ -46,7 +50,7 @@ main .introduction {
 .btns {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 30px 0;
 }
 
@@ -68,11 +72,19 @@ main .introduction {
     background-color: rgb(0, 89, 206);
 }
 
+.btns a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 50%;
+}
+
 .btns .view {
     border: none;
     background-color: #fff;
     font-size: 1.2em;
-    width: 50%;
+    width: 100%;
     font-weight: 600;
     color: #666;
     cursor: pointer;
@@ -269,6 +281,28 @@ footer .logo-container {
         width: 100%;
         position: absolute;
         z-index: 999;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+    
+    .menu-btn {
+        display: flex;
+    }
+
+    .menu-btn button {
+        background-color: rgb(61, 1, 113);
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+    font-weight: 400;
+    
+    transition: all .4s;
     }
 
     main {
